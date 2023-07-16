@@ -26,6 +26,7 @@ async def root():
 
 @app.get("/api")
 async def read_root():
+    print("hello")
     return DB
 
 @app.get("/hello/{name}")
